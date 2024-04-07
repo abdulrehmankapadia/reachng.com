@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column; /* Center vertically */
         }
 
         .container {
@@ -28,41 +28,9 @@
             color: #333333;
             letter-spacing: 2px;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <img src="image.png" alt="Reaching">
-        </div>
-        <img src="header.jpg" alt="Reahning">
-        <h1>MARKETING CONSULTING</h1>
-        
-    </div>
-</body>
-</html>
-<body>
-    <div class="container">
-        <div class="logo">
-            <img src="image.png" alt="Reaching">
-        </div>
-        <h1>MARKETING CONSULTING</h1>
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Marketing Consulting Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
 
-        h1 {
+        /* Additional styles for Marketing Consulting Services section */
+        h1.services-title {
             text-align: center;
             padding: 20px;
         }
@@ -72,11 +40,13 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            flex-wrap: wrap; /* Wrap items if they exceed container width */
         }
 
         .service {
             text-align: center;
-            margin: 0 20px;
+            margin: 0 20px 20px; /* Added margin bottom */
+            flex: 0 0 calc(33.33% - 40px); /* Adjust based on the number of services */
         }
 
         .service img {
@@ -88,67 +58,59 @@
             margin-top: 10px;
             font-size: 14px;
         }
-    </style>
-</head>
-<body>
-    <h1>Marketing Consulting Services</h1>
-    <div class="services">
-        <div class="service">
-            <img src="image1.jpg" alt="Email Campaign Strategy and Planning">
-            <h2>"Email Campaign Strategy and Planning"</h2>
-            <p>Tailored strategies aligning email marketing with business goals through audience segmentation and content planning.
-            </p>
-        </div>
-        <div class="service">
-            <img src="image2.jpg" alt="A/B Testing and Optimization">
-            <h2>"A/B Testing and Optimization"</h2>
-            <p>Test and refine email elements to identify top-performing variations for maximum engagement.</p>
-        </div>
-        <div class="service">
-            <img src="image3.jpg" alt="Analytics and Reporting">
-            <h2>"Analytics and Reporting"</h2>
-            <p>Comprehensive data tracking, custom reports, and actionable insights for continuous optimization.</p>
-        </div>
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Get a Quote</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
 
-        h1 {
+        /* Additional styles for Get a Quote section */
+        h1.quote-title {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        p {
+        p.quote-info {
             text-align: center;
             color: #555;
             margin-bottom: 10px;
         }
 
-        a {
+        a.quote-email {
             color: #555;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Get a quote or set up a consultation.</h1>
-    <p>EMAIL</p>
-    <a href="mailto:info@reachng.com">info@reachng.com</a>
+    <div class="container">
+        <div class="logo">
+            <img src="image.png" alt="Reaching">
+        </div>
+        <h1>MARKETING CONSULTING</h1>
+    </div>
+
+    <!-- Marketing Consulting Services Section -->
+    <h1 class="services-title">Marketing Consulting Services</h1>
+    <div class="services">
+        <div class="service">
+            <img src="image1.jpg" alt="Email Campaign Strategy and Planning">
+            <img src="header.jpg" alt="Reaching">
+            <h2>"Email Campaign Strategy and Planning"</h2>
+            <p>Tailored strategies aligning email marketing with business goals through audience segmentation and content planning.</p>
+        </div>
+        <div class="service">
+            <img src="image2.jpg" alt="A/B Testing and Optimization">
+            <img src="header.jpg" alt="Reaching">
+            <h2>"A/B Testing and Optimization"</h2>
+            <p>Test and refine email elements to identify top-performing variations for maximum engagement.</p>
+        </div>
+        <div class="service">
+            <img src="image3.jpg" alt="Analytics and Reporting">
+            <img src="header.jpg" alt="Reaching">
+            <h2>"Analytics and Reporting"</h2>
+            <p>Comprehensive data tracking, custom reports, and actionable insights for continuous optimization.</p>
+        </div>
+    </div>
+
+    <!-- Get a Quote Section -->
+    <h1 class="quote-title">Get a quote or set up a consultation.</h1>
+    <p class="quote-info">EMAIL</p>
+    <a href="mailto:info@reachng.com" class="quote-email">info@reachng.com</a>
 </body>
 </html>
